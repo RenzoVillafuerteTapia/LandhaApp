@@ -1,0 +1,56 @@
+/* Ruta: frontend/src/styles/main.css */
+
+/* ─── Variables de marca LandhaApp ─── */
+:root {
+  --landha-brown:       #6B3F1F;
+  --landha-brown-light: #8B5E3C;
+  --landha-wood:        #A0724A;
+  --landha-beige:       #F5EFE6;
+  --landha-beige-dark:  #E8DECE;
+  --landha-cream:       #FBF7F2;
+  --landha-metal:       #8E9BAA;
+  --landha-metal-dark:  #5A6A78;
+  --landha-black:       #1C1C1C;
+  --landha-gray:        #6B6B6B;
+  --landha-gray-light:  #F0EDE8;
+  --landha-success:     #3B7A57;
+  --landha-danger:      #A8392B;
+  --landha-warning:     #B5841A;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 4px rgba(107, 63, 31, 0.08);
+  --shadow-md: 0 4px 16px rgba(107, 63, 31, 0.12);
+  --shadow-lg: 0 8px 32px rgba(107, 63, 31, 0.16);
+
+  --font-main: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: var(--font-main);
+  background: var(--landha-cream);
+  color: var(--landha-black);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--landha-brown); text-decoration: none; }
+
+/* ─── Scrollbar personalizado ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--landha-beige); }
+::-webkit-scrollbar-thumb { background: var(--landha-wood); border-radius: 3px; }
+
+/* ─── Utilidades ─── */
+.text-muted { color: var(--landha-gray); font-size: 0.875rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 1rem; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.gap-2 { gap: 0.75rem; }
+.w-full { width: 100%; }
